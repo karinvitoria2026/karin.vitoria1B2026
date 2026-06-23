@@ -1,25 +1,20 @@
-/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth; /* Faz o clique no link rolar a tela suavemente */
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     background-color: #fde24f;
+    /* Imagem de fundo padrão de Minions */
     background-image: url('https://scrapsbee.com/wp-content/uploads/2015/07/minions-background-pattern.jpg');
     background-repeat: repeat;
     background-attachment: fixed;
     padding-bottom: 40px;
 }
 
-/* Cabeçalho */
 .main-header {
     text-align: center;
     padding: 40px 20px;
@@ -47,7 +42,6 @@ body {
     padding: 0 20px;
 }
 
-/* Cartões de Conteúdo */
 .card {
     display: flex;
     background-color: rgba(255, 255, 255, 0.95);
@@ -55,12 +49,18 @@ body {
     margin-bottom: 30px;
     overflow: hidden;
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.01);
 }
 
 .card-image {
     flex: 1;
     min-width: 250px;
     max-width: 300px;
+    background-color: #eee; /* Cor de fundo caso a foto demore a carregar */
 }
 
 .card-image img {
@@ -107,48 +107,6 @@ body {
 
 .btn:hover {
     background-color: #1a3a6d;
-}
-
-/* Divisor e Caixas de Explicação Interna */
-.divider {
-    border: 0;
-    height: 4px;
-    background: #2b59a2;
-    margin: 50px 0;
-    border-radius: 2px;
-}
-
-.details-box {
-    background-color: rgba(255, 255, 255, 0.98);
-    border-left: 8px solid #2b59a2;
-    padding: 30px;
-    border-radius: 8px;
-    margin-bottom: 40px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.details-box h2 {
-    color: #2b59a2;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-}
-
-.details-box p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #444;
-    margin-bottom: 15px;
-}
-
-.back-link {
-    color: #2b59a2;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-.back-link:hover {
-    text-decoration: underline;
 }
 
 .main-footer {
