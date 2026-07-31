@@ -1,59 +1,161 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog dos Minions</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog dos Minions</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#FFD400;
+    color:#222;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+nav{
+    background:#0057B8;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.container{
+    max-width:1000px;
+    margin:30px auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+h2{
+    color:#0057B8;
+    margin-bottom:10px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+button{
+    background:#FFD400;
+    color:black;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    margin-top:15px;
+}
+
+button:hover{
+    background:orange;
+}
+</style>
+
 </head>
 <body>
 
 <header>
-    <h1>🟡 Blog dos Minions 🥽</h1>
-    <p>Tudo sobre os personagens mais divertidos do cinema!</p>
+<h1>🍌 Blog dos Minions 🍌</h1>
+<p>Tudo sobre as criaturinhas amarelas mais famosas do cinema.</p>
 </header>
 
 <nav>
-    <a href="#">Início</a>
-    <a href="#">Personagens</a>
-    <a href="#">Filmes</a>
-    <a href="#">Curiosidades</a>
+<a href="#">Início</a>
+<a href="#">Curiosidades</a>
+<a href="#">Personagens</a>
+<a href="#">Contato</a>
 </nav>
 
 <div class="container">
 
-    <div class="card">
-        <h2>Quem são os Minions?</h2>
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Minions_characters.png" alt="Minions">
 
-        <p>
-            Os Minions são criaturas amarelas muito divertidas que adoram aventuras.
-        </p>
+<h2>Quem são os Minions?</h2>
 
-        <p id="texto-completo" style="display: none;">
-            Eles existem há milhões de anos e sempre procuram servir o maior vilão da Terra. Com seu jeito engraçado e sua linguagem única, conquistaram milhões de fãs ao redor do mundo.
-        </p>
+<p>
+Os Minions são criaturas amarelas muito divertidas que apareceram
+pela primeira vez no filme <b>Meu Malvado Favorito</b>. Eles adoram
+bananas, fazer bagunça e ajudar seus chefes.
+</p>
 
-        <button onclick="lerMais()" id="btnLerMais">
-            Ler mais 🍌
-        </button>
-    </div>
+<button onclick="mostrarMensagem()">
+Clique aqui 🍌
+</button>
 
-    <div class="card">
-        <h2>Personagens</h2>
-        <ul>
-            <li>Kevin 🥽</li>
-            <li>Stuart 🎸</li>
-            <li>Bob 🧸</li>
-        </ul>
-    </div>
+</div>
+
+<div class="card">
+<h2>Curiosidades</h2>
+
+<ul>
+<li>🍌 Adoram bananas.</li>
+<li>😄 Falam uma língua própria.</li>
+<li>🎬 Participaram de vários filmes.</li>
+<li>💙 Usam macacão azul.</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>Os mais famosos</h2>
+
+<p><b>Kevin</b> - O líder.</p>
+<p><b>Stuart</b> - Ama tocar violão.</p>
+<p><b>Bob</b> - O mais fofo do grupo.</p>
+
+</div>
 
 </div>
 
 <footer>
-    <p>© 2026 Blog dos Minions</p>
+<p>© 2026 Blog dos Minions - Feito com HTML, CSS e JavaScript 💛</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+function mostrarMensagem(){
+    alert("Banana! 🍌 Bem-vindo ao Blog dos Minions!");
+}
+</script>
 
 </body>
 </html>
