@@ -3,67 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Os 4 Temas Principais de Minions - Meu Site</title>
+    <title>Blog dos Minions</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <h1>Análise Temática: Filme Minions</h1>
-        <p>Clique nos tópicos para ler as explicações profundas nas minhas subpáginas</p>
-    </header>
+<header>
+    <h1>🟡 Blog dos Minions 🥽</h1>
+    <p>Tudo sobre os personagens mais divertidos do cinema!</p>
+</header>
 
-    <main class="container">
-        
-        <section class="card">
-            <div class="card-image">
-                <img src="minions1.jpg" alt="Minions procurando um chefe">
-            </div>
-            <div class="card-content">
-                <h2><a href="tema1.html">1. A Busca por um Propósito</a></h2>
-                <p>Toda a jornada dos Minions gira em torno do propósito de vida deles: encontrar e servir ao chefe mais malvado do mundo. O filme mostra como eles ficam desanimados e sem rumo quando não têm um líder para seguir.</p>
-                <a href="tema1.html" class="btn">Leia a minha explicação completa</a>
-            </div>
-        </section>
+<nav>
+    <a href="#">Início</a>
+    <a href="#">Personagens</a>
+    <a href="#">Filmes</a>
+    <a href="#">Curiosidades</a>
+</nav>
 
-        <section class="card">
-            <div class="card-image">
-                <img src="minions2.jpg" alt="Minions unidos">
-            </div>
-            <div class="card-content">
-                <h2><a href="tema2.html">2. Lealdade e Companheirismo</a></h2>
-                <p>Apesar de serem atrapalhados, Kevin, Stuart e Bob demonstram uma união incrível. Eles enfrentam perigos, viajam pelo mundo e se arriscam o tempo todo para salvar uns aos outros.</p>
-                <a href="tema2.html" class="btn">Leia a minha explicação completa</a>
-            </div>
-        </section>
+<div class="container">
 
-        <section class="card">
-            <div class="card-image">
-                <img src="minions3.jpg" alt="Minions comemorando">
-            </div>
-            <div class="card-content">
-                <h2><a href="tema3.html">3. Liderança e Ambição</a></h2>
-                <p>Através da vilã Scarlet Overkill, o filme ironiza a ambição desmedida pelo poder absoluto. O contraste entre a liderança egoísta dela e a união genuína dos Minions serve como uma crítica bem construída.</p>
-                <a href="tema3.html" class="btn">Leia a minha explicação completa</a>
-            </div>
-        </section>
+    <div class="card">
+        <h2>Quem são os Minions?</h2>
 
-        <section class="card">
-            <div class="card-image">
-                <img src="minions4.jpg" alt="Minion rindo">
-            </div>
-            <div class="card-content">
-                <h2><a href="tema4.html">4. Resiliência através do Humor</a></h2>
-                <p>Mesmo quando os planos dão completamente errado, os Minions não desistem. Eles usam o otimismo, a criatividade e muita comédia física para superar os obstáculos cotidianos.</p>
-                <a href="tema4.html" class="btn">Leia a minha explicação completa</a>
-            </div>
-        </section>
+        <p>
+            Os Minions são criaturas amarelas muito divertidas que adoram aventuras.
+        </p>
 
-    </main>
+        <p id="texto-completo" style="display: none;">
+            Eles existem há milhões de anos e sempre procuram servir o maior vilão da Terra. Com seu jeito engraçado e sua linguagem única, conquistaram milhões de fãs ao redor do mundo.
+        </p>
 
-    <footer class="main-footer">
-        <p>&copy; 2026 - Rede de Sites sobre o Filme Minions</p>
-    </footer>
+        <button onclick="lerMais()" id="btnLerMais">
+            Ler mais 🍌
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>Personagens</h2>
+        <ul>
+            <li>Kevin 🥽</li>
+            <li>Stuart 🎸</li>
+            <li>Bob 🧸</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Blog dos Minions</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
