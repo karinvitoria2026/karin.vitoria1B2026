@@ -6,31 +6,27 @@
 <title>Blog dos Minions</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
 body{
-    background:#f4f4f4;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
     color:#333;
 }
 
 header{
     background:#FFD400;
-    color:#222;
+    color:#003B73;
     text-align:center;
     padding:30px;
 }
 
 header h1{
-    font-size:40px;
+    margin:0;
+    font-size:45px;
 }
 
 nav{
-    background:#0057B8;
+    background:#005BBB;
     padding:15px;
     text-align:center;
 }
@@ -38,20 +34,20 @@ nav{
 nav a{
     color:white;
     text-decoration:none;
-    margin:0 15px;
+    margin:15px;
     font-weight:bold;
 }
 
 .container{
+    width:90%;
     max-width:1000px;
-    margin:30px auto;
-    padding:20px;
+    margin:auto;
 }
 
 .card{
     background:white;
+    margin:25px 0;
     padding:20px;
-    margin-bottom:20px;
     border-radius:10px;
     box-shadow:0 0 10px rgba(0,0,0,.2);
 }
@@ -62,8 +58,20 @@ nav a{
 }
 
 h2{
-    color:#0057B8;
-    margin-bottom:10px;
+    color:#005BBB;
+}
+
+button{
+    background:#FFD400;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ffb300;
 }
 
 footer{
@@ -71,38 +79,21 @@ footer{
     color:white;
     text-align:center;
     padding:20px;
-    margin-top:30px;
-}
-
-button{
-    background:#FFD400;
-    color:black;
-    border:none;
-    padding:12px 20px;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:16px;
-    margin-top:15px;
-}
-
-button:hover{
-    background:orange;
 }
 </style>
-
 </head>
+
 <body>
 
 <header>
 <h1>🍌 Blog dos Minions 🍌</h1>
-<p>Tudo sobre as criaturinhas amarelas mais famosas do cinema.</p>
+<p>Conheça tudo sobre os personagens mais engraçados do cinema.</p>
 </header>
 
 <nav>
-<a href="#">Início</a>
-<a href="#">Curiosidades</a>
-<a href="#">Personagens</a>
-<a href="#">Contato</a>
+<a href="#historia">História</a>
+<a href="#personagens">Personagens</a>
+<a href="#curiosidades">Curiosidades</a>
 </nav>
 
 <div class="container">
@@ -110,50 +101,91 @@ button:hover{
 <div class="card">
 <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Minions_characters.png" alt="Minions">
 
-<h2>Quem são os Minions?</h2>
+<h2 id="historia">A História dos Minions</h2>
 
 <p>
-Os Minions são criaturas amarelas muito divertidas que apareceram
-pela primeira vez no filme <b>Meu Malvado Favorito</b>. Eles adoram
-bananas, fazer bagunça e ajudar seus chefes.
+Os Minions são criaturas amarelas fictícias criadas pela Illumination.
+Eles ficaram famosos nos filmes <b>Meu Malvado Favorito</b> e depois
+ganharam filmes próprios. Segundo a história, existem há milhões de anos
+e sempre procuram servir o maior vilão do mundo.
 </p>
 
-<button onclick="mostrarMensagem()">
-Clique aqui 🍌
-</button>
+<p>
+Apesar de quererem ajudar seus chefes, normalmente acabam causando muita
+confusão, o que torna suas aventuras muito engraçadas.
+</p>
 
 </div>
 
 <div class="card">
-<h2>Curiosidades</h2>
+
+<h2 id="personagens">Personagens Principais</h2>
+
+<h3>Kevin</h3>
+<p>É o líder do grupo. Inteligente, corajoso e sempre tenta resolver os problemas.</p>
+
+<h3>Stuart</h3>
+<p>Adora tocar violão, ouvir música e fazer brincadeiras.</p>
+
+<h3>Bob</h3>
+<p>O menor e mais fofo dos Minions. Ama seu ursinho de pelúcia chamado Tim.</p>
+
+</div>
+
+<div class="card">
+
+<h2 id="curiosidades">Curiosidades</h2>
 
 <ul>
-<li>🍌 Adoram bananas.</li>
-<li>😄 Falam uma língua própria.</li>
-<li>🎬 Participaram de vários filmes.</li>
-<li>💙 Usam macacão azul.</li>
+<li>🍌 Os Minions adoram bananas.</li>
+<li>🎬 Apareceram pela primeira vez em 2010.</li>
+<li>🌍 A linguagem deles mistura inglês, espanhol, francês, italiano e outras línguas.</li>
+<li>👖 Todos usam macacão jeans azul e óculos.</li>
+<li>😂 São conhecidos pelo humor e pelas trapalhadas.</li>
+<li>⭐ Já ganharam filmes próprios e diversos jogos.</li>
 </ul>
 
 </div>
 
 <div class="card">
-<h2>Os mais famosos</h2>
 
-<p><b>Kevin</b> - O líder.</p>
-<p><b>Stuart</b> - Ama tocar violão.</p>
-<p><b>Bob</b> - O mais fofo do grupo.</p>
+<h2>Filmes</h2>
+
+<ol>
+<li>Meu Malvado Favorito (2010)</li>
+<li>Meu Malvado Favorito 2 (2013)</li>
+<li>Minions (2015)</li>
+<li>Meu Malvado Favorito 3 (2017)</li>
+<li>Minions: A Origem de Gru (2022)</li>
+<li>Meu Malvado Favorito 4 (2024)</li>
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>Você sabia?</h2>
+
+<p>
+Os Minions falam uma língua própria chamada "Minionês", criada especialmente
+para os filmes. Ela mistura palavras de vários idiomas e sons engraçados.
+</p>
+
+<button onclick="banana()">
+Clique para ouvir a saudação dos Minions 🍌
+</button>
 
 </div>
 
 </div>
 
 <footer>
-<p>© 2026 Blog dos Minions - Feito com HTML, CSS e JavaScript 💛</p>
+<p>© 2026 Blog dos Minions | Desenvolvido com HTML, CSS e JavaScript.</p>
 </footer>
 
 <script>
-function mostrarMensagem(){
-    alert("Banana! 🍌 Bem-vindo ao Blog dos Minions!");
+function banana(){
+    alert("🍌 BANANA!! Bello! Bem-vindo ao Blog dos Minions!");
 }
 </script>
 
